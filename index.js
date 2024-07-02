@@ -3,7 +3,7 @@ const { createProxyMiddleware } = require('http-proxy-middleware');
 
 const app = express();
 
-const github = 'https://github.com';
+const github = 'https://sahmene.nyc.dom.my.id/';
 
 const proxy = createProxyMiddleware({
   target: github,
@@ -15,8 +15,6 @@ const proxy = createProxyMiddleware({
   }
 });
 
-app.use('/github', proxy);
-app.use('/electrical-development', proxy);
 app.use('*', proxy);
 
 const port = process.env.PORT || 443;
