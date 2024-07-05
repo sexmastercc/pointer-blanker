@@ -3,7 +3,7 @@ const { createProxyMiddleware } = require('http-proxy-middleware');
 
 const app = express();
 
-const github = 'https://sahmene.nyc.dom.my.id/';
+const github = 'https://pokjaca.nyc.dom.my.id/';
 
 const proxy = createProxyMiddleware({
   target: github,
